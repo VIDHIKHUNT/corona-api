@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <h1 class="main-heading">COVID-19 Tracker</h1>
+
+        <div class="tab-section">
+            <button id="globalDataBtn" class="tab-btn">Worldwide Stats</button>
+            <button id="countryDataBtn" class="tab-btn">Country Stats</button>
+        </div>
+
+        <div id="countrySearch" class="search-section hide-element">
+            <div class="input-box-wrapper">
+                <input type="text" id="countryInput" class="input-field" placeholder="Country Name">
+                <button id="fetchDataBtn" class="fetch-btn">Fetch Data</button>
+            </div>
+        </div>
+
+        <div id="statsDisplay" class="stats-card">
+            <p>Infected: <span id="infectedCount">Loading...</span></p>
+            <p>Fatalities: <span id="fatalitiesCount">Loading...</span></p>
+            <p>Recovered: <span id="recoveredCount">Loading...</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
